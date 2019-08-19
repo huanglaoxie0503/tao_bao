@@ -183,7 +183,7 @@ class UsernameLogin:
         # 提取淘宝昵称
         nick_name_match = re.search(r'<input id="mtb-nickname" type="hidden" value="(.*?)"/>', response.text)
         if nick_name_match:
-            print('骚呢，兄弟：{}'.format(nick_name_match.group(1)))
+            print('干啥呢，老弟：{}'.format(nick_name_match.group(1)))
             return nick_name_match.group(1)
         else:
             raise RuntimeError('获取淘宝昵称失败！response：{}'.format(response.text))
